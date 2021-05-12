@@ -16,8 +16,21 @@ import sys
 
 def simpleArraySum(ar):
     # Write your code here
-    print("Hello World test", ar)
+    sum=0
+    for i in ar:
+        sum = sum + i
+    
+    print("Simple Sum result", sum)
+    return sum
 
+
+def arraySum(ar):
+    # Write your code here
+    ans = sum(ar)
+    print("ArraySum Sum result", ans)
+    return ans
 
 if __name__ == '__main__':
-    simpleArraySum("abc abc")
+    arr = [1, 2, 3, 4, 10, 11]
+    simpleArraySum(arr)
+    arraySum(arr)
